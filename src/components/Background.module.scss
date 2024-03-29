@@ -6,12 +6,24 @@ body {
 .background {
   width: 100vw;
   height: 100vh;
-  background: darkslategray;
+}
+
+.light {
+  background: #c3e1ff;
+}
+
+.dark {
+  background: #171717fc;
+  > span {
+  }
 }
 
 $particleSize: 20vmin;
-$animationDuration: 60s;
+// $particleSize: 5vmin;
+$animationDuration: 360s;
 $amount: 20;
+// $amount: 10;
+
 .background {
   > span {
     width: $particleSize;
@@ -23,12 +35,14 @@ $amount: 20;
     animation-duration: $animationDuration;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    $colors: (black, gray, darkGray);
+    $colors: (#7ba0ea, #9d97eb, #ffffff);
     @for $i from 1 through $amount {
       &:nth-child(#{$i}) {
         color: nth($colors, random(length($colors)));
-        top: random(100) * 1%;
-        left: random(100) * 1%;
+        // top: random(100) * 1%;
+        // left: random(100) * 1%;
+        top: random(50) * 1%;
+        left: random(50) * 1%;
         animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
         animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
         transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;

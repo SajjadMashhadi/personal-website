@@ -5,14 +5,28 @@
   .navbar {
     display: flex;
     justify-content: space-evenly;
-    width: 300px;
-    border-bottom: 2px solid black;
+    width: 250px;
+
+    padding-bottom: 5px;
     > a {
       text-decoration: none;
-      color: black;
     }
     > .isActive {
       font-weight: bold;
+    }
+  }
+
+  .light {
+    border-bottom: 2px solid black;
+    > a {
+      color: black;
+    }
+  }
+
+  .dark {
+    border-bottom: 2px solid rgba(198, 198, 198, 0.733);
+    > a {
+      color: rgba(231, 231, 231, 0.815);
     }
   }
 }

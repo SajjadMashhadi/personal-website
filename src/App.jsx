@@ -14,7 +14,7 @@ function App() {
           <Header />
           <Routes>
             <Route index element={<Contact />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/myBackground" element={<About />} />
           </Routes>
           <Footer />
         </BrowserRouter>
