@@ -1,5 +1,10 @@
 .footer {
+  position: fixed;
+  bottom: 20px;
+  width: 98%;
   > p {
     text-align: center;
+    font-size: 10px;
+    color: darkgray;
   }
 }

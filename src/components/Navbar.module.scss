@@ -1,13 +1,18 @@
-.navbar {
+.navbarContainer {
   display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-  border-bottom: 2px solid black;
-  > a {
-    text-decoration: none;
-    color: black;
-  }
-  > .isActive {
-    font-weight: bold;
+  justify-content: center;
+  margin-top: 20px;
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    border-bottom: 2px solid black;
+    > a {
+      text-decoration: none;
+      color: black;
+    }
+    > .isActive {
+      font-weight: bold;
+    }
   }
 }

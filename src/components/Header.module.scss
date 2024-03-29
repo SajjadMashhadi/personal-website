@@ -1,9 +1,21 @@
 @use "../css/UI" as variables;
 
-$colorOne: blue;
 .header {
-  display: flex;
-  justify-content: center;
-  //   color: $LightColor;
-  color: variables.$LightColor;
+  .infoContainer {
+    padding-top: 25px;
+    > div {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .imageContainer {
+      > img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    }
+    .name {
+      font-weight: bold;
+    }
+  }
 }

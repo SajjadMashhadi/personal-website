@@ -1,6 +1,6 @@
 .contact {
   text-align: center;
-  > ul {
+  > div {
     list-style-type: none;
     > li {
       display: flex;
@@ -11,13 +11,22 @@
         text-decoration: none;
         display: flex;
         justify-content: space-between;
-        width: 400px;
+        width: 250px;
+        padding: 5px 15px;
+        border: 1px solid darkgray;
+        border-radius: 5px;
         color: black;
         > span {
           display: block;
           > i {
             color: black;
           }
+        }
+        .iconContainer {
+          font-size: 25px;
+        }
+        .linkText {
+          padding-top: 5px;
         }
       }
     }
