@@ -1,0 +1,9 @@
+@use "../css/UI" as variables;
+
+$colorOne: blue;
+.header {
+  display: flex;
+  justify-content: center;
+  //   color: $LightColor;
+  color: variables.$LightColor;
+}
