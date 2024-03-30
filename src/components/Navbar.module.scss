@@ -5,10 +5,11 @@
   .navbar {
     display: flex;
     justify-content: space-evenly;
-    width: 250px;
+    width: 350px;
 
     padding-bottom: 5px;
     > a {
+      // margin: 0 25px;
       text-decoration: none;
     }
     > .isActive {
@@ -19,6 +20,9 @@
   .light {
     border-bottom: 2px solid black;
     > a {
+      color: rgb(68, 68, 68);
+    }
+    > .isActive {
       color: black;
     }
   }
@@ -26,7 +30,10 @@
   .dark {
     border-bottom: 2px solid rgba(198, 198, 198, 0.733);
     > a {
-      color: rgba(231, 231, 231, 0.815);
+      color: rgba(201, 201, 201, 0.815);
+    }
+    > .isActive {
+      color: rgba(255, 255, 255, 0.815);
     }
   }
 }

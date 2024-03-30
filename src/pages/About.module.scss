@@ -1,0 +1,24 @@
+.about {
+  .aboutItem {
+    display: flex;
+    justify-content: center;
+    .label {
+      padding-top: 22px;
+      margin-right: 20px;
+    }
+  }
+}
+.light {
+  .aboutItem {
+    .label {
+      color: rgb(43, 43, 43);
+    }
+  }
+}
+.dark {
+  .aboutItem {
+    .label {
+      color: rgb(202, 202, 202);
+    }
+  }
+}

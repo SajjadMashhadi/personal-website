@@ -11,13 +11,19 @@ function Navbar() {
           className={({ isActive }) => (isActive ? styles.isActive : "")}
           to={"/"}
         >
-          Contact
+          Contact me
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.isActive : "")}
           to={"/myBackground"}
         >
-          My Background
+          My background
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.isActive : "")}
+          to={"/skills"}
+        >
+          Skills
         </NavLink>
       </div>
     </div>
