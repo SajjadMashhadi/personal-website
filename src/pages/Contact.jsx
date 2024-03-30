@@ -19,9 +19,9 @@ const data = [
     link: "https://t.me/Sajjadmashhadi",
   },
   {
-    name: "instagram",
-    text: "@sajjadmashhadi7",
-    link: "https://www.instagram.com/sajjadmashhadi7",
+    name: "linkedin",
+    text: "sajjad mashhadi",
+    link: "https://www.linkedin.com/in/sajjad-mashhadi-407061222/",
   },
 ];
 

@@ -1,7 +1,7 @@
 import SkillItem from "../components/SkillItem";
 import styles from "./Skills.module.scss";
 
-const data = ["ReactJS", "Redux", "Restful API", "HTML", "CSS"];
+const data = ["JavaScript", "React", "Redux", "REST API", "HTML", "CSS"];
 
 function Skills() {
   return (
