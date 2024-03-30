@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
+import { useTheme } from "../context/useTheme";
 
 function Navbar() {
-  const theme = "dark";
+  const { theme } = useTheme();
   return (
     <div className={styles.navbarContainer}>
       <div className={`${styles.navbar} ${styles[theme]}`}>

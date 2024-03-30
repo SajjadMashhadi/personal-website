@@ -1,0 +1,22 @@
+.switch {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  > button {
+    background-color: unset;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    > i {
+      font-size: 40px;
+    }
+  }
+  > button:hover {
+    cursor: pointer;
+  }
+}
+.light {
+  > button {
+    border: 1px solid black;
+  }
+}

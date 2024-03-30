@@ -4,3 +4,13 @@
     list-style-type: none;
   }
 }
+.light {
+  > p {
+    color: black;
+  }
+}
+.dark {
+  > p {
+    color: rgb(161, 161, 161);
+  }
+}

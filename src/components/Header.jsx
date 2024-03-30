@@ -1,10 +1,12 @@
+import { useTheme } from "../context/useTheme";
 import styles from "./Header.module.scss";
 import Navbar from "./Navbar";
 import ThemeSwitch from "./ThemeSwitch";
 
 function Header() {
+  const { theme } = useTheme();
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${styles[theme]}`}>
       <div className={styles.swithContainer}>
         <ThemeSwitch />
       </div>

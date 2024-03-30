@@ -19,3 +19,17 @@
     }
   }
 }
+.light {
+  .infoContainer {
+    > div {
+      color: black;
+    }
+  }
+}
+.dark {
+  .infoContainer {
+    > div {
+      color: rgb(196, 196, 196);
+    }
+  }
+}

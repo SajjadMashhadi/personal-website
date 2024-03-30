@@ -1,5 +1,6 @@
 import styles from "./Contact.module.scss";
 import ListItem from "../components/ListItem";
+import { useTheme } from "../context/useTheme";
 
 const data = [
   {
@@ -25,8 +26,9 @@ const data = [
 ];
 
 function Contact() {
+  const { theme } = useTheme();
   return (
-    <div className={styles.contact}>
+    <div className={`${styles.contact} ${styles[theme]}`}>
       <p>You can contact me through these:</p>
       <div>
         {data.map((item) => (

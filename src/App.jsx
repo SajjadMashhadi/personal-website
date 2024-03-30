@@ -5,10 +5,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Background from "./components/Background";
+import { ThemeProvider } from "./context/useTheme";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Background>
         <BrowserRouter>
           <Header />
@@ -19,7 +20,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </Background>
-    </>
+    </ThemeProvider>
   );
 }
 

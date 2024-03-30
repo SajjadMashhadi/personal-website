@@ -5,6 +5,16 @@
   > p {
     text-align: center;
     font-size: 10px;
+  }
+}
+.light {
+  > p {
     color: black;
+  }
+}
+
+.dark {
+  > p {
+    color: rgb(204, 204, 204);
   }
 }
