@@ -1,0 +1,36 @@
+/* eslint-disable react/prop-types */
+import { useTheme } from "../context/useTheme";
+import styles from "./ToggleButton.module.scss";
+
+function ToggleButton({ type }) {
+  const { theme, setTheme, lang, setLang } = useTheme();
+  const handleSwitchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+  const handleSwitchLang = () => {
+    const newLang = lang === "en" ? "fa" : "en";
+    setLang(newLang);
+    localStorage.setItem("lang", newLang);
+  };
+  return (
+    <div className={`${styles.switch} ${styles[theme]}`}>
+      {type === "lang" ? (
+        <button onClick={() => handleSwitchLang()}>
+          {lang === "en" ? "FA" : "EN"}
+        </button>
+      ) : (
+        <button onClick={() => handleSwitchTheme()}>
+          {theme === "light" ? (
+            <i className={`fa-solid fa-moon`}></i>
+          ) : (
+            <i className="fa-solid fa-sun"></i>
+          )}
+        </button>
+      )}
+    </div>
+  );
+}
+
+export default ToggleButton;

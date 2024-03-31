@@ -9,3 +9,9 @@ body {
 #root {
   overflow: hidden;
 }
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}

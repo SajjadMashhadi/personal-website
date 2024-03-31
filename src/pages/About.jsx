@@ -7,23 +7,32 @@ const data = [
     name: "graduation-cap",
     text: "Kharazmi university",
     link: "https://khu.ac.ir/en",
-    label: "Learnt computer engineering at:",
+    label: {
+      en: "Learnt computer engineering at:",
+      fa: "مهندسی کامپیوتر از:",
+    },
   },
   {
     name: "code",
     text: "Nahira",
     link: "https://nahira.ir",
-    label: "worked as ReactJS developer at:",
+    label: {
+      en: "worked as ReactJS developer at:",
+      fa: "سابقه کار در:",
+    },
   },
 ];
 
 function About() {
-  const { theme } = useTheme();
+  const { theme, lang } = useTheme();
   return (
     <div className={`${styles.about} ${styles[theme]}`}>
       {data.map((item) => (
-        <div key={item.name} className={styles.aboutItem}>
-          <div className={styles.label}>{item.label}</div>
+        <div
+          key={item.name}
+          className={`${styles.aboutItem} ${lang === "fa" ? "rtl" : "ltr"}`}
+        >
+          <div className={styles.label}>{item.label[lang]}</div>
           <ListItem item={item} />
         </div>
       ))}

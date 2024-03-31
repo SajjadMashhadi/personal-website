@@ -25,11 +25,16 @@ const data = [
   },
 ];
 
+const text = {
+  en: { sentence: "You can contact me through these:" },
+  fa: { sentence: ":راه های ارتباطی" },
+};
+
 function Contact() {
-  const { theme } = useTheme();
+  const { theme, lang } = useTheme();
   return (
     <div className={`${styles.contact} ${styles[theme]}`}>
-      <p>You can contact me through these:</p>
+      <p>{text[lang].sentence}</p>
       <div>
         {data.map((item) => (
           <ListItem item={item} key={item.name} />

@@ -6,19 +6,25 @@ const initialTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
   : "light";
 
-const ThemeContext = createContext(initialTheme);
+const initialLang = localStorage.getItem("lang")
+  ? localStorage.getItem("lang")
+  : "EN";
+
+const AppContext = createContext({ initialLang, initialTheme });
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(initialTheme);
+  const [lang, setLang] = useState(initialLang);
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <AppContext.Provider value={{ theme, setTheme, lang, setLang }}>
       {children}
-    </ThemeContext.Provider>
+    </AppContext.Provider>
   );
 };
 
 const useTheme = () => {
-  const context = useContext(ThemeContext);
+  const context = useContext(AppContext);
   return context;
 };
 

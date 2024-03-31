@@ -2,8 +2,13 @@ import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import { useTheme } from "../context/useTheme";
 
+const names = {
+  en: { contact: "Contact me", background: "My background", skills: "Skills" },
+  fa: { contact: "ارتباط با من", background: "سابقه", skills: "مهارت ها" },
+};
+
 function Navbar() {
-  const { theme } = useTheme();
+  const { theme, lang } = useTheme();
   return (
     <div className={styles.navbarContainer}>
       <div className={`${styles.navbar} ${styles[theme]}`}>
@@ -11,19 +16,19 @@ function Navbar() {
           className={({ isActive }) => (isActive ? styles.isActive : "")}
           to={"/"}
         >
-          Contact me
+          {names[lang].contact}
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.isActive : "")}
           to={"/myBackground"}
         >
-          My background
+          {names[lang].background}
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? styles.isActive : "")}
           to={"/skills"}
         >
-          Skills
+          {names[lang].skills}
         </NavLink>
       </div>
     </div>
