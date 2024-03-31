@@ -20,6 +20,10 @@ function ToggleButton({ type }) {
         <button onClick={() => handleSwitchLang()}>
           {lang === "en" ? "FA" : "EN"}
         </button>
+      ) : type === "menu" ? (
+        <button className={styles.menuButton}>
+          <i className="fas fa-bars"></i>
+        </button>
       ) : (
         <button onClick={() => handleSwitchTheme()}>
           {theme === "light" ? (

@@ -19,6 +19,7 @@ function Header() {
   return (
     <div className={`${styles.header} ${styles[theme]}`}>
       <div className={styles.switchContainer}>
+        <ToggleButton type="menu" />
         <ToggleButton type="theme" />
         <ToggleButton type="lang" />
       </div>

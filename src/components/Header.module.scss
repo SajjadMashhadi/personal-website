@@ -6,6 +6,10 @@
     position: absolute;
     right: 40px;
     top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
   }
   .infoContainer {
     padding-top: 25px;

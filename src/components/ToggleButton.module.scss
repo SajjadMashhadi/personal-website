@@ -4,6 +4,7 @@
     border: none;
     width: 70px;
     height: 70px;
+    display: none;
     > i {
       font-size: 20px;
     }
@@ -11,7 +12,26 @@
   > button:hover {
     cursor: pointer;
   }
+  .menuButton {
+    display: block;
+  }
 }
+@media only screen and (min-width: 600px) {
+  .switch {
+    > button {
+      width: 70px;
+      height: 70px;
+      display: block;
+      > i {
+        font-size: 20px;
+      }
+    }
+    .menuButton {
+      display: none;
+    }
+  }
+}
+
 .light {
   > button {
     background-color: rgba(255, 255, 255, 0.34);
