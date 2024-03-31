@@ -2,7 +2,7 @@
 import { useTheme } from "../context/useTheme";
 import styles from "./ToggleButton.module.scss";
 
-function ToggleButton({ type }) {
+function ToggleButton({ type, show, setShow }) {
   const { theme, setTheme, lang, setLang } = useTheme();
   const handleSwitchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -21,7 +21,10 @@ function ToggleButton({ type }) {
           {lang === "en" ? "FA" : "EN"}
         </button>
       ) : type === "menu" ? (
-        <button className={styles.menuButton}>
+        <button
+          onClick={() => setShow((show) => !show)}
+          className={styles.menuButton}
+        >
           <i className="fas fa-bars"></i>
         </button>
       ) : (

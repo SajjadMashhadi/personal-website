@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useTheme } from "../context/useTheme";
 import styles from "./Header.module.scss";
 import Navbar from "./Navbar";
 import ToggleButton from "./ToggleButton";
+import Menu from "./Menu";
 
 const info = {
   en: {
@@ -15,11 +17,23 @@ const info = {
 };
 
 function Header() {
+  const [show, setShow] = useState(false);
+
   const { theme, lang } = useTheme();
+
   return (
     <div className={`${styles.header} ${styles[theme]}`}>
+      {/* <div className={styles.menuContainer}>
+        <div
+          onClick={() => setShow((show) => !show)}
+          className={styles.menuBack}
+        ></div>
+        <Menu show={show} setShow={setShow} />
+      </div> */}
+      <Menu show={show} setShow={setShow} />
+
       <div className={styles.switchContainer}>
-        <ToggleButton type="menu" />
+        <ToggleButton type="menu" show={show} setShow={setShow} />
         <ToggleButton type="theme" />
         <ToggleButton type="lang" />
       </div>

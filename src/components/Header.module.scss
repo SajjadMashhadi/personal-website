@@ -2,6 +2,17 @@
 
 .header {
   margin-bottom: 25px;
+  .menuContainer {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    .menuBack {
+      width: 30%;
+    }
+  }
   .switchContainer {
     position: absolute;
     right: 40px;
