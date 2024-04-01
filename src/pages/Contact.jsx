@@ -33,7 +33,7 @@ const text = {
 function Contact() {
   const { theme, lang } = useTheme();
   return (
-    <div className={`${styles.contact} ${styles[theme]}`}>
+    <div className={`${styles.contact} ${styles[theme]} ${styles[lang]}`}>
       <p>{text[lang].sentence}</p>
       <div>
         {data.map((item) => (

@@ -26,7 +26,7 @@ const data = [
 function About() {
   const { theme, lang } = useTheme();
   return (
-    <div className={`${styles.about} ${styles[theme]}`}>
+    <div className={`${styles.about} ${styles[theme]} ${styles[lang]}`}>
       {data.map((item) => (
         <div
           key={item.name}

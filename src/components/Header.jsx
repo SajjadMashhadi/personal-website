@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <>
-      <div className={`${styles.header} ${styles[theme]}`}>
+      <div className={`${styles.header} ${styles[theme]} ${styles[lang]}`}>
         {/* <div className={styles.menuContainer}>
         <div
           onClick={() => setShow((show) => !show)}

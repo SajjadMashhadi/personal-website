@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.scss";
 import { useTheme } from "../context/useTheme";
