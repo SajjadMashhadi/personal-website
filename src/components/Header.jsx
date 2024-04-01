@@ -31,9 +31,10 @@ function Header() {
         <Menu show={show} setShow={setShow} />
       </div> */}
       <Menu show={show} setShow={setShow} />
-
-      <div className={styles.switchContainer}>
+      <div className={styles.toggleMenuContainer}>
         <ToggleButton type="menu" show={show} setShow={setShow} />
+      </div>
+      <div className={styles.switchContainer}>
         <ToggleButton type="theme" />
         <ToggleButton type="lang" />
       </div>
@@ -44,7 +45,9 @@ function Header() {
         <div className={styles.name}>{info[lang].name}</div>
         <div className={styles.sentence}>{info[lang].sentence}</div>
       </div>
-      <Navbar />
+      <div className={styles.navbarContainer}>
+        <Navbar />
+      </div>
     </div>
   );
 }

@@ -10,27 +10,27 @@ const names = {
 function Navbar() {
   const { theme, lang } = useTheme();
   return (
-    <div className={styles.navbarContainer}>
-      <div className={`${styles.navbar} ${styles[theme]}`}>
-        <NavLink
-          className={({ isActive }) => (isActive ? styles.isActive : "")}
-          to={"/"}
-        >
-          {names[lang].contact}
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? styles.isActive : "")}
-          to={"/myBackground"}
-        >
-          {names[lang].background}
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? styles.isActive : "")}
-          to={"/skills"}
-        >
-          {names[lang].skills}
-        </NavLink>
-      </div>
+    <div className={`${styles.navbar} ${styles[theme]}`}>
+      <NavLink
+        className={({ isActive }) => (isActive ? styles.isActive : "")}
+        to={"/"}
+      >
+        {names[lang].contact}
+      </NavLink>
+      <hr />
+      <NavLink
+        className={({ isActive }) => (isActive ? styles.isActive : "")}
+        to={"/myBackground"}
+      >
+        {names[lang].background}
+      </NavLink>
+      <hr />
+      <NavLink
+        className={({ isActive }) => (isActive ? styles.isActive : "")}
+        to={"/skills"}
+      >
+        {names[lang].skills}
+      </NavLink>
     </div>
   );
 }

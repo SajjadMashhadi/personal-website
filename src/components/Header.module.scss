@@ -14,6 +14,9 @@
     }
   }
   .switchContainer {
+    display: none;
+  }
+  .toggleMenuContainer {
     position: absolute;
     right: 40px;
     top: 40px;
@@ -22,6 +25,7 @@
     height: 150px;
     justify-content: space-between;
   }
+
   .infoContainer {
     padding-top: 25px;
     > div {
@@ -40,6 +44,9 @@
       font-size: 25px;
     }
   }
+  .navbarContainer {
+    display: none;
+  }
 }
 .light {
   .infoContainer {
@@ -52,6 +59,28 @@
   .infoContainer {
     > div {
       color: rgb(196, 196, 196);
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    .navbarContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .switchContainer {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      justify-content: space-between;
+    }
+    .toggleMenuContainer {
+      display: none;
     }
   }
 }

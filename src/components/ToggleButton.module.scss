@@ -4,7 +4,6 @@
     border: none;
     width: 70px;
     height: 70px;
-    display: none;
     > i {
       font-size: 20px;
     }
@@ -16,20 +15,7 @@
     display: block;
   }
 }
-@media only screen and (min-width: 600px) {
-  .switch {
-    > button {
-      width: 70px;
-      height: 70px;
-      display: block;
-      > i {
-        font-size: 20px;
-      }
-    }
-    .menuButton {
-      display: none;
-    }
-  }
+@media only screen and (min-width: 500px) {
 }
 
 .light {

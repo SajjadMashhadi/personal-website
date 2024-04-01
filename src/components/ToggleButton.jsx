@@ -27,6 +27,13 @@ function ToggleButton({ type, show, setShow }) {
         >
           <i className="fas fa-bars"></i>
         </button>
+      ) : type === "close" ? (
+        <button
+          onClick={() => setShow((show) => !show)}
+          className={styles.menuButton}
+        >
+          <i className="fa fa-angle-right"></i>
+        </button>
       ) : (
         <button onClick={() => handleSwitchTheme()}>
           {theme === "light" ? (

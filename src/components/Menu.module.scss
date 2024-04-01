@@ -1,18 +1,42 @@
 .menu {
   height: 100vh;
-  width: 70%;
+  width: 75%;
   z-index: 1000;
   position: absolute;
   right: -400px;
   //   transition: 0.5s cubic-bezier(0.36, -0.01, 0, 0.77);
   transition: 0.5s;
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .NavContainer {
+    margin-top: 50px;
+  }
+}
+.backMenu {
+  display: none;
+}
+.showBackMenu {
+  height: 100vh;
+  width: 25%;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
 }
 .showMenu {
   right: 0;
 }
 .light {
-  background-color: rgba(230, 230, 230, 0.903);
+  background-color: #c8e0f8;
 }
 .dark {
-  background-color: rgba(51, 51, 51, 0.877);
+  background-color: rgba(43, 43, 43, 0.986);
+}
+
+@media only screen and (min-width: 500px) {
+  .menu {
+    display: none;
+  }
 }
