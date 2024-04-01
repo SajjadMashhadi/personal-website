@@ -4,11 +4,11 @@ import { createContext } from "react";
 
 const initialTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
-  : "light";
+  : "dark";
 
 const initialLang = localStorage.getItem("lang")
   ? localStorage.getItem("lang")
-  : "en";
+  : "fa";
 
 const AppContext = createContext({ initialLang, initialTheme });
 

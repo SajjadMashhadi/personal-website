@@ -2,7 +2,7 @@
 import { useTheme } from "../context/useTheme";
 import styles from "./ToggleButton.module.scss";
 
-function ToggleButton({ type, show, setShow }) {
+function ToggleButton({ type, setShow }) {
   const { theme, setTheme, lang, setLang } = useTheme();
   const handleSwitchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -35,7 +35,10 @@ function ToggleButton({ type, show, setShow }) {
           <i className="fa fa-angle-right"></i>
         </button>
       ) : (
-        <button onClick={() => handleSwitchTheme()}>
+        <button
+          title={`${theme === "light" ? "Light" : "Dark"} mode`}
+          onClick={() => handleSwitchTheme()}
+        >
           {theme === "light" ? (
             <i className={`fa-solid fa-moon`}></i>
           ) : (
