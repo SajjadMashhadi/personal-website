@@ -7,6 +7,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .light {
@@ -19,7 +20,7 @@ body {
   }
 }
 
-$particleSize: 20vmin;
+$particleSize: 10vmin;
 // $particleSize: 5vmin;
 $animationDuration: 360s;
 $amount: 20;
@@ -31,7 +32,7 @@ $amount: 20;
     height: $particleSize;
     border-radius: $particleSize;
     backface-visibility: hidden;
-    position: absolute;
+    position: fixed;
     animation-name: move;
     animation-duration: $animationDuration;
     animation-timing-function: linear;

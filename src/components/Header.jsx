@@ -22,33 +22,36 @@ function Header() {
   const { theme, lang } = useTheme();
 
   return (
-    <div className={`${styles.header} ${styles[theme]}`}>
-      {/* <div className={styles.menuContainer}>
+    <>
+      <div className={`${styles.header} ${styles[theme]}`}>
+        {/* <div className={styles.menuContainer}>
         <div
           onClick={() => setShow((show) => !show)}
           className={styles.menuBack}
         ></div>
         <Menu show={show} setShow={setShow} />
       </div> */}
-      <Menu show={show} setShow={setShow} />
-      <div className={styles.toggleMenuContainer}>
-        <ToggleButton type="menu" show={show} setShow={setShow} />
-      </div>
-      <div className={styles.switchContainer}>
-        <ToggleButton type="theme" />
-        <ToggleButton type="lang" />
-      </div>
-      <div className={styles.infoContainer}>
-        <div className={styles.imageContainer}>
-          <img alt="profile picture" src="/public/profile-picture-2.jpg" />
+        <Menu show={show} setShow={setShow} />
+        <div className={styles.toggleMenuContainer}>
+          <ToggleButton type="menu" show={show} setShow={setShow} />
         </div>
-        <div className={styles.name}>{info[lang].name}</div>
-        <div className={styles.sentence}>{info[lang].sentence}</div>
+        <div className={styles.switchContainer}>
+          <ToggleButton type="theme" />
+          <ToggleButton type="lang" />
+        </div>
+        <div className={styles.infoContainer}>
+          <div className={styles.imageContainer}>
+            <img alt="profile picture" src="/public/profile-picture-2.jpg" />
+          </div>
+          <div className={styles.name}>{info[lang].name}</div>
+          <div className={styles.sentence}>{info[lang].sentence}</div>
+        </div>
+        <div className={styles.navbarContainer}>
+          <Navbar setShow={setShow} />
+        </div>
+        <hr />
       </div>
-      <div className={styles.navbarContainer}>
-        <Navbar />
-      </div>
-    </div>
+    </>
   );
 }
 

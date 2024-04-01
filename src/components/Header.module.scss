@@ -18,8 +18,8 @@
   }
   .toggleMenuContainer {
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 20px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     height: 150px;
@@ -34,18 +34,27 @@
     }
     .imageContainer {
       > img {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
       }
     }
     .name {
       font-weight: bold;
-      font-size: 25px;
+      font-size: 20px;
+    }
+    .sentence {
+      padding: 0 20px;
+      font-size: 13px;
     }
   }
   .navbarContainer {
     display: none;
+  }
+  > hr {
+    margin-top: 20px;
+    width: 50%;
+    border: 0.8px solid black;
   }
 }
 .light {
@@ -54,12 +63,18 @@
       color: black;
     }
   }
+  > hr {
+    border: 0.8px solid black;
+  }
 }
 .dark {
   .infoContainer {
     > div {
       color: rgb(196, 196, 196);
     }
+  }
+  > hr {
+    border: 0.8px solid rgba(227, 227, 227, 0.936);
   }
 }
 
@@ -81,6 +96,30 @@
     }
     .toggleMenuContainer {
       display: none;
+    }
+    > hr {
+      display: none;
+    }
+    .infoContainer {
+      padding-top: 25px;
+      > div {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .imageContainer {
+        > img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .sentence {
+        font-size: 18px;
+      }
     }
   }
 }

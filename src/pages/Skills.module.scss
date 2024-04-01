@@ -2,6 +2,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 400px;
+  padding: 0 50px;
   margin-top: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+  .skills {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .skills {
+    padding: 0 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .skills {
+    padding: 0 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .skills {
+    padding: 0 500px;
+  }
 }

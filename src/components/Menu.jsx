@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import { useTheme } from "../context/useTheme";
 import styles from "./Menu.module.scss";
 import Navbar from "./Navbar";
@@ -6,7 +7,7 @@ import ToggleButton from "./ToggleButton";
 
 function Menu({ show, setShow }) {
   const { theme } = useTheme();
-  // if (!show) return null;
+
   return (
     <>
       <div
@@ -24,7 +25,7 @@ function Menu({ show, setShow }) {
           <ToggleButton type="lang" />
         </div>
         <div className={styles.NavContainer}>
-          <Navbar />
+          <Navbar setShow={setShow} />
         </div>
       </div>
     </>

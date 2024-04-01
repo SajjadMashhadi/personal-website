@@ -7,11 +7,12 @@ const names = {
   fa: { contact: "ارتباط با من", background: "سابقه", skills: "مهارت ها" },
 };
 
-function Navbar() {
+function Navbar({ setShow }) {
   const { theme, lang } = useTheme();
   return (
     <div className={`${styles.navbar} ${styles[theme]}`}>
       <NavLink
+        onClick={() => setShow(false)}
         className={({ isActive }) => (isActive ? styles.isActive : "")}
         to={"/"}
       >
@@ -19,6 +20,7 @@ function Navbar() {
       </NavLink>
       <hr />
       <NavLink
+        onClick={() => setShow(false)}
         className={({ isActive }) => (isActive ? styles.isActive : "")}
         to={"/myBackground"}
       >
@@ -26,6 +28,7 @@ function Navbar() {
       </NavLink>
       <hr />
       <NavLink
+        onClick={() => setShow(false)}
         className={({ isActive }) => (isActive ? styles.isActive : "")}
         to={"/skills"}
       >

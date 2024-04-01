@@ -1,11 +1,11 @@
 .about {
   .aboutItem {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     .label {
+      text-align: center;
       padding-top: 22px;
-      margin-right: 20px;
-      min-width: 150px;
     }
   }
 }
@@ -20,6 +20,22 @@
   .aboutItem {
     .label {
       color: rgb(202, 202, 202);
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .about {
+    .aboutItem {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .label {
+        text-align: right;
+        padding-top: 22px;
+        margin-right: 20px;
+        min-width: 150px;
+      }
     }
   }
 }
