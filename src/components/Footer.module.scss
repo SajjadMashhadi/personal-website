@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  bottom: 20px;
+  width: 98%;
+  > p {
+    text-align: center;
+    font-size: 8px;
+  }
+  > * {
+    font-family: allerregular;
+  }
+}
+.light {
+  > p {
+    color: black;
+  }
+}
+
+.dark {
+  > p {
+    color: rgb(204, 204, 204);
+  }
+}

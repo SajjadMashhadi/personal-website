@@ -1,0 +1,32 @@
+.fa {
+  > * {
+    font-family: shabnam;
+  }
+  > p {
+    font-weight: bold;
+  }
+}
+
+.en {
+  > * {
+    font-family: allerregular;
+  }
+}
+
+.contact {
+  text-align: center;
+
+  > div {
+    list-style-type: none;
+  }
+}
+.light {
+  > p {
+    color: rgb(43, 43, 43);
+  }
+}
+.dark {
+  > p {
+    color: rgb(202, 202, 202);
+  }
+}

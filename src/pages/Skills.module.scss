@@ -1,0 +1,59 @@
+.fa {
+  font-family: shabnam;
+}
+
+.en {
+  font-family: allerregular;
+}
+
+.light {
+  color: rgb(43, 43, 43);
+}
+.dark {
+  color: rgb(202, 202, 202);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 50px;
+  margin-top: 20px;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .skills {
+    padding: 0 100px;
+  }
+  .title {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .skills {
+    padding: 0 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .skills {
+    padding: 0 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .skills {
+    padding: 0 500px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .skills {
+    padding: 0 600px;
+  }
+}

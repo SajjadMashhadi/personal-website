@@ -1,0 +1,17 @@
+.skillItem {
+  padding: 3px 14px;
+  border-radius: 2px;
+  font-size: 13px;
+  margin: 10px 5px;
+  font-family: monospace;
+}
+.light {
+  background-color: rgba(255, 255, 255, 0.622);
+  color: rgba(55, 55, 55, 0.866);
+  border-left: 2px solid rgb(48, 48, 48);
+}
+.dark {
+  background-color: rgba(49, 49, 49, 0.93);
+  color: rgba(208, 208, 208, 0.904);
+  border-left: 2px solid rgba(255, 255, 255, 0.842);
+}

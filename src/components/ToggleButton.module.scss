@@ -1,0 +1,52 @@
+.switch {
+  > button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    height: 60px;
+    > i {
+      font-size: 15px;
+    }
+  }
+  > button:hover {
+    cursor: pointer;
+  }
+  .menuButton {
+    display: block;
+  }
+}
+
+.light {
+  > button {
+    background-color: rgba(255, 255, 255, 0.34);
+    color: rgb(0, 63, 92);
+    > i {
+      color: rgb(0, 63, 92);
+    }
+  }
+}
+.dark {
+  > button {
+    background-color: rgba(61, 61, 61, 0.473);
+    color: rgba(255, 255, 255, 0.868);
+    > i {
+      color: rgba(255, 255, 255, 0.818);
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .switch {
+    > button {
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      width: 70px;
+      height: 70px;
+      > i {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@use "../css/UI" as variables;
+
+.fa {
+  > * {
+    font-family: shabnam;
+  }
+}
+
+.en {
+  > * {
+    font-family: allerregular;
+  }
+}
+
+.header {
+  margin-bottom: 25px;
+  .menuContainer {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    .menuBack {
+      width: 30%;
+    }
+  }
+  .switchContainer {
+    display: none;
+  }
+  .toggleMenuContainer {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+  }
+
+  .infoContainer {
+    padding-top: 25px;
+    > div {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .imageContainer {
+      > img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+    }
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .sentence {
+      padding: 0 20px;
+      font-size: 12px;
+      margin-bottom: 40px;
+    }
+  }
+  .navbarContainer {
+    display: none;
+  }
+  > hr {
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 15px;
+  }
+}
+.light {
+  .infoContainer {
+    > div {
+      color: black;
+    }
+  }
+  > hr {
+    border: 0.8px solid black;
+  }
+}
+.dark {
+  .infoContainer {
+    > div {
+      color: rgb(196, 196, 196);
+    }
+  }
+  > hr {
+    border: 0.8px solid rgba(227, 227, 227, 0.936);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    .navbarContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .switchContainer {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      justify-content: space-between;
+    }
+    .toggleMenuContainer {
+      display: none;
+    }
+    > hr {
+      display: none;
+    }
+    .infoContainer {
+      padding-top: 25px;
+      > div {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .imageContainer {
+        > img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .sentence {
+        font-size: 15px;
+      }
+    }
+  }
+}
