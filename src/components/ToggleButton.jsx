@@ -17,7 +17,10 @@ function ToggleButton({ type, setShow }) {
   return (
     <div className={`${styles.switch} ${styles[theme]}`}>
       {type === "lang" ? (
-        <button onClick={() => handleSwitchLang()}>
+        <button
+          title={lang === "en" ? "Farsi" : "English"}
+          onClick={() => handleSwitchLang()}
+        >
           {lang === "en" ? "FA" : "EN"}
         </button>
       ) : type === "menu" ? (
@@ -36,7 +39,7 @@ function ToggleButton({ type, setShow }) {
         </button>
       ) : (
         <button
-          title={`${theme === "light" ? "Light" : "Dark"} mode`}
+          title={`${theme === "light" ? "Dark" : "Light"} mode`}
           onClick={() => handleSwitchTheme()}
         >
           {theme === "light" ? (

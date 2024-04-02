@@ -8,7 +8,7 @@ const initialTheme = localStorage.getItem("theme")
 
 const initialLang = localStorage.getItem("lang")
   ? localStorage.getItem("lang")
-  : "fa";
+  : "en";
 
 const AppContext = createContext({ initialLang, initialTheme });
 

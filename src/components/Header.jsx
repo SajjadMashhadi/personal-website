@@ -24,13 +24,6 @@ function Header() {
   return (
     <>
       <div className={`${styles.header} ${styles[theme]} ${styles[lang]}`}>
-        {/* <div className={styles.menuContainer}>
-        <div
-          onClick={() => setShow((show) => !show)}
-          className={styles.menuBack}
-        ></div>
-        <Menu show={show} setShow={setShow} />
-      </div> */}
         <Menu show={show} setShow={setShow} />
         <div className={styles.toggleMenuContainer}>
           <ToggleButton type="menu" show={show} setShow={setShow} />

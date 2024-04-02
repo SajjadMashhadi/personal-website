@@ -26,7 +26,7 @@ const data = [
 ];
 
 const text = {
-  en: { sentence: "You can contact me through these:" },
+  en: { sentence: "You can contact me through:" },
   fa: { sentence: ":راه های ارتباطی" },
 };
 

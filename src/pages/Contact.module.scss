@@ -2,6 +2,9 @@
   > * {
     font-family: shabnam;
   }
+  > p {
+    font-weight: bold;
+  }
 }
 
 .en {
@@ -12,17 +15,18 @@
 
 .contact {
   text-align: center;
+
   > div {
     list-style-type: none;
   }
 }
 .light {
   > p {
-    color: black;
+    color: rgb(43, 43, 43);
   }
 }
 .dark {
   > p {
-    color: rgb(161, 161, 161);
+    color: rgb(202, 202, 202);
   }
 }

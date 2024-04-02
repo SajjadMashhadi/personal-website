@@ -17,8 +17,8 @@ const data = [
     text: "Nahira",
     link: "https://nahira.ir",
     label: {
-      en: "worked as ReactJS developer at:",
-      fa: "سابقه کار در:",
+      en: "worked as ReactJS developer for a year at:",
+      fa: "یک سال سابقه کار در:",
     },
   },
 ];
