@@ -2,7 +2,7 @@
   font-family: shabnam;
   font-style: normal;
   font-weight: 100;
-  src: url("fonts/Shabnam.eot");
+  src: url("Shabnam.eot");
   src: url("fonts/Shabnam.woff") format("woff"),
     url("fonts/Shabnam.ttf") format("ttf"),
     url("fonts/Shabnam.woff2") format("woff2");
@@ -10,16 +10,16 @@
 
 @font-face {
   font-family: "allerbold";
-  src: url("fonts/aller_bd.woff2") format("woff2"),
-    url("fonts/aller_bd.woff") format("woff");
+  src: url("aller_bd.woff2") format("woff2"),
+    url("aller_bd.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "allerregular";
-  src: url("fonts/aller_rg.woff2") format("woff2"),
-    url("fonts/aller_rg.woff") format("woff");
+  src: url("aller_rg.woff2") format("woff2"),
+    url("aller_rg.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
