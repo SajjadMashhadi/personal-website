@@ -34,7 +34,7 @@ function Header() {
         </div>
         <div className={styles.infoContainer}>
           <div className={styles.imageContainer}>
-            <img alt="profile picture" src="/public/profile-picture-2.jpg" />
+            <img alt="profile picture" src="profile-picture-2.jpg" />
           </div>
           <div className={styles.name}>{info[lang].name}</div>
           <div className={styles.sentence}>{info[lang].sentence}</div>
